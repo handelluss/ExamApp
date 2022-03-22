@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/exercisesFragment">
+
+    <fragment
+        android:id="@+id/exercisesFragment"
+        android:name="com.handelluss.examapp.fragments.ExercisesFragment"
+        android:label="ExercisesFragment"
+        tools:layout="@layout/fragment_exercises" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.handelluss.examapp.fragments.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/theoryFragment"
+        android:name="com.handelluss.examapp.fragments.TheoryFragment"
+        android:label="TheoryFragment"
+        tools:layout="@layout/fragment_theory" />
+</navigation>
