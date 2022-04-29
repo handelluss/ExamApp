@@ -1,67 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/main_fragment_style"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/exerciseFragmentButtonOrthography"
-        style="@style/exerciseFragmentBigButton"
-        android:text="@string/fragmentExerciseButtonOrthography"
 
-        app:layout_constraintBottom_toTopOf="@+id/fragment_exercise_guideline"
-        app:layout_constraintEnd_toStartOf="@+id/exerciseFragmentButtonPunctuation"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.7" />
-
-    <Button
-        android:id="@+id/exerciseFragmentButtonPunctuation"
-        style="@style/exerciseFragmentBigButton"
-        android:text="@string/fragmentExerciseButtonPunctuation"
-
-        app:layout_constraintBottom_toTopOf="@+id/fragment_exercise_guideline"
-        app:layout_constraintStart_toEndOf="@+id/exerciseFragmentButtonOrthography"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.7" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/fragment_exercise_guideline"
+    <TextView
+        android:id="@+id/emphasisTextview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.50" />
+
+        android:elevation="10dp"
+        android:text="Ударения"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+
+        app:layout_constraintBottom_toTopOf="@id/number4Textview"
+        app:layout_constraintEnd_toEndOf="@id/emphasisButton"
+        app:layout_constraintStart_toStartOf="@id/emphasisButton"
+        app:layout_constraintTop_toTopOf="@id/emphasisButton" />
+
+    <TextView
+        android:id="@+id/number4Textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:elevation="10dp"
+        android:text="№4 ЕГЭ"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+
+        app:layout_constraintBottom_toBottomOf="@id/emphasisButton"
+        app:layout_constraintEnd_toEndOf="@id/emphasisButton"
+        app:layout_constraintStart_toStartOf="@id/emphasisButton"
+        app:layout_constraintTop_toBottomOf="@id/emphasisTextview" />
 
     <Button
-        android:id="@+id/exerciseFragmentButtonSmallText"
-        style="@style/exerciseFragmentSmallButton"
-        android:text="@string/fragmentExerciseButtonSmallText"
+        android:id="@+id/emphasisButton"
+        style="@style/button_style"
+        android:layout_width="307dp"
+        android:layout_height="174dp"
 
-        app:layout_constraintBottom_toTopOf="@+id/exerciseFragmentButtonLingNorms"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fragment_exercise_guideline"
-        app:layout_constraintVertical_chainStyle="spread" />
-
-    <Button
-        android:id="@+id/exerciseFragmentButtonLingNorms"
-        style="@style/exerciseFragmentSmallButton"
-        android:text="@string/fragmentExerciseButtonLingNorms"
-
-        app:layout_constraintBottom_toTopOf="@+id/exerciseFragmentButtonBigText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/exerciseFragmentButtonSmallText" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/paronymButton"
+        app:layout_constraintHorizontal_bias="0.5"
+
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+
+
+    <TextView
+        android:id="@+id/paronymTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:elevation="10dp"
+        android:text="Паронимы"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+
+        app:layout_constraintStart_toStartOf="@id/paronymButton"
+        app:layout_constraintEnd_toEndOf="@id/paronymButton"
+        app:layout_constraintTop_toTopOf="@id/paronymButton"
+        app:layout_constraintBottom_toTopOf="@id/number5Textview"
+        />
+
+    <TextView
+        android:id="@+id/number5Textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:elevation="10dp"
+        android:text="№5 ЕГЭ"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+
+        app:layout_constraintStart_toStartOf="@id/paronymButton"
+        app:layout_constraintEnd_toEndOf="@id/paronymButton"
+        app:layout_constraintTop_toBottomOf="@id/paronymTextview"
+        app:layout_constraintBottom_toBottomOf="@id/paronymButton"
+        />
 
     <Button
-        android:id="@+id/exerciseFragmentButtonBigText"
-        style="@style/exerciseFragmentSmallButton"
-        android:text="@string/fragmentExerciseButtonBigText"
+        android:id="@+id/paronymButton"
+        style="@style/button_style"
+        android:layout_width="307dp"
+        android:layout_height="174dp"
 
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emphasisButton"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/exerciseFragmentButtonLingNorms" />
+        app:layout_constraintHorizontal_bias="0.5"
+
+        tools:ignore="SpeakableTextPresentCheck" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

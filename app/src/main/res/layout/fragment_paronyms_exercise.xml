@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/main_fragment_style">
+
+    <TextView
+        android:id="@+id/timeTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="1:32"
+        android:textSize="32dp"
+        android:textColor="@color/white"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/firstGuidelineEmphasisExerciseFragment"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="60dp"/>
+
+    <TextView
+        android:id="@+id/progressTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="3/10"
+        android:textSize="32dp"
+        android:textColor="@color/white"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/firstGuidelineEmphasisExerciseFragment"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="60dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/firstGuidelineEmphasisExerciseFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.17920657" />
+
+    <Button
+        android:id="@+id/firstEmphasisButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        style="@style/paronym_exercise_button_style"
+
+        android:text="ПАМЯТЛИВЫЕ места"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/firstGuidelineEmphasisExerciseFragment"
+        app:layout_constraintBottom_toTopOf="@id/secondEmphasisButton"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:id="@+id/secondEmphasisButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        style="@style/paronym_exercise_button_style"
+
+        android:text="ЛЕДОВОЙ обстановки"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/firstEmphasisButton"
+        app:layout_constraintBottom_toTopOf="@id/thirdEmphasisButton" />
+
+    <Button
+        android:id="@+id/thirdEmphasisButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        style="@style/paronym_exercise_button_style"
+
+        android:text="у ПРИЗНАТЕЛЬНЫХ слушателей"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/secondEmphasisButton"
+        app:layout_constraintBottom_toTopOf="@id/fourthEmphasisButton" />
+
+    <Button
+        android:id="@+id/fourthEmphasisButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        style="@style/paronym_exercise_button_style"
+
+        android:text="ОТБОРОЧНЫЙ тур"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/thirdEmphasisButton"
+        app:layout_constraintBottom_toTopOf="@id/fifthEmphasisButton" />
+
+    <Button
+        android:id="@+id/fifthEmphasisButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        style="@style/paronym_exercise_button_style"
+
+        android:text="в ПРОДУКТОВОЙ корзине"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fourthEmphasisButton"
+        app:layout_constraintBottom_toBottomOf="@id/secondGuidelineEmphasisExercise" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/secondGuidelineEmphasisExercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.92" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
