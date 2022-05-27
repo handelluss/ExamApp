@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/main_fragment_style"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    style="@style/main_fragment_style">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/timeTextview"
+    <Chronometer
+        android:id="@+id/chronometer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="1:32"
-        android:textSize="32dp"
-        android:textColor="@color/white"
 
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/firstGuidelineEmphasisExerciseFragment"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="80dp"
-        android:layout_marginStart="60dp"/>
+
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toTopOf="@id/firstGuidelineEmphasisExerciseFragment"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/progressTextview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="3/10"
-        android:textSize="32dp"
-        android:textColor="@color/white"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/firstGuidelineEmphasisExerciseFragment"
         android:layout_marginTop="80dp"
-        android:layout_marginEnd="60dp"/>
+        android:layout_marginEnd="60dp"
+        android:text="3/10"
+
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toTopOf="@id/firstGuidelineEmphasisExerciseFragment"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/firstGuidelineEmphasisExerciseFragment"
@@ -42,75 +42,74 @@
 
     <Button
         android:id="@+id/firstEmphasisButton"
+        style="@style/button_style"
         android:layout_width="wrap_content"
+
         android:layout_height="wrap_content"
 
-        style="@style/button_style"
+        android:layout_marginTop="80dp"
 
         android:text="сверлИт"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/firstGuidelineEmphasisExerciseFragment"
         app:layout_constraintBottom_toTopOf="@id/secondEmphasisButton"
-        android:layout_marginTop="80dp"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/firstGuidelineEmphasisExerciseFragment" />
 
     <Button
         android:id="@+id/secondEmphasisButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
         style="@style/button_style"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
 
         android:text="красИвее"
 
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/thirdEmphasisButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/firstEmphasisButton"
-        app:layout_constraintBottom_toTopOf="@id/thirdEmphasisButton" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/firstEmphasisButton" />
 
     <Button
         android:id="@+id/thirdEmphasisButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
         style="@style/button_style"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
 
         android:text="занялА"
 
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/fourthEmphasisButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/secondEmphasisButton"
-        app:layout_constraintBottom_toTopOf="@id/fourthEmphasisButton" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/secondEmphasisButton" />
 
     <Button
         android:id="@+id/fourthEmphasisButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
         style="@style/button_style"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
 
         android:text="начАв"
 
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/fifthEmphasisButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/thirdEmphasisButton"
-        app:layout_constraintBottom_toTopOf="@id/fifthEmphasisButton" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/thirdEmphasisButton" />
 
     <Button
         android:id="@+id/fifthEmphasisButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
         style="@style/button_style"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
 
         android:text="грАжданство"
 
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/secondGuidelineEmphasisExercise"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/fourthEmphasisButton"
-        app:layout_constraintBottom_toBottomOf="@id/secondGuidelineEmphasisExercise" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fourthEmphasisButton" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/secondGuidelineEmphasisExercise"

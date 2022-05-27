@@ -10,19 +10,15 @@ class ExercisesFragment : Fragment(R.layout.fragment_exercises){
         super.onViewCreated(view, savedInstanceState)
 
         val emphasisButton = view.findViewById<View>(R.id.emphasisButton)
-        val paronymButton = view.findViewById<View>(R.id.paronymButton)
 
         emphasisButton.setOnClickListener{
             getExerciseFragment(EmphasisExerciseFragment())
-        }
-        paronymButton.setOnClickListener {
-            getExerciseFragment(ParonymsExerciseFragment())
         }
     }
 
     private fun getExerciseFragment(fragment : Fragment) {
         activity?.supportFragmentManager?.beginTransaction()
-            ?.replace(R.id.fragmentContainerView, fragment)
-            ?.addToBackStack("tag")?.commit()
+            ?.replace(R.id.fragmentContainer, fragment)
+            ?.addToBackStack("exercise")?.commit()
     }
 }

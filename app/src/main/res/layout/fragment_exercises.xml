@@ -43,61 +43,27 @@
         android:layout_width="307dp"
         android:layout_height="174dp"
 
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/paronymButton"
-        app:layout_constraintHorizontal_bias="0.5"
-
-        tools:ignore="SpeakableTextPresentCheck" />
-
-
-
-
-    <TextView
-        android:id="@+id/paronymTextview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:elevation="10dp"
-        android:text="Паронимы"
-        android:textColor="@color/white"
-        android:textSize="30sp"
-
-        app:layout_constraintStart_toStartOf="@id/paronymButton"
-        app:layout_constraintEnd_toEndOf="@id/paronymButton"
-        app:layout_constraintTop_toTopOf="@id/paronymButton"
-        app:layout_constraintBottom_toTopOf="@id/number5Textview"
-        />
-
-    <TextView
-        android:id="@+id/number5Textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:elevation="10dp"
-        android:text="№5 ЕГЭ"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-
-        app:layout_constraintStart_toStartOf="@id/paronymButton"
-        app:layout_constraintEnd_toEndOf="@id/paronymButton"
-        app:layout_constraintTop_toBottomOf="@id/paronymTextview"
-        app:layout_constraintBottom_toBottomOf="@id/paronymButton"
-        />
-
-    <Button
-        android:id="@+id/paronymButton"
-        style="@style/button_style"
-        android:layout_width="307dp"
-        android:layout_height="174dp"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emphasisButton"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
 
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:text="Ударения ЕГЭ"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
