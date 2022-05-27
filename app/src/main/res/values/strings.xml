@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Exam Russian App</string>
+    <string name="app_name">Ударения ЕГЭ</string>
 
     <string name="fragmentExerciseButtonOrthography">Орфография</string>
     <string name="fragmentExerciseButtonPunctuation">Пунктуация</string>
